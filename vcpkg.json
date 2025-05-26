@@ -1,0 +1,12 @@
+{
+  "name": "launcher",
+  "version": "0",
+  "dependencies": [
+    {
+      "name": "spdlog"
+    },
+    {
+      "name": "minhook"
+    }
+  ]
+}
