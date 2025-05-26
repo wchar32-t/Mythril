@@ -101,7 +101,7 @@ auto main(int argc, char* argv[]) -> int
     auto bugs = create_and_suspend();
     if (bugs.hProcess == nullptr)
     {
-        spdlog::error("Failed to create process!");
+        console->error("Failed to create process!");
         return 0;
     }
 
