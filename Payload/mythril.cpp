@@ -51,13 +51,6 @@ int __cdecl detour_load_asset(LPCSTR path, int a1) {
         return load_asset_o(stdpath.c_str(), a1);
     }
 
-    if (stdpath.rfind("@:\\", 0) == 0 || stdpath.rfind("Assets\\", 0) == 0)
-    {
-        stdpath.replace(0, 3, directory);
-        console->info("redirected path to: {}", stdpath);
-        return load_asset_o(stdpath.c_str(), a1);
-    }
-
     return load_asset_o(path, a1);
 }
 
